@@ -1,0 +1,100 @@
+﻿#header{
+	height:70px;
+}
+#mainMenu{
+	background:#43494c;
+}
+#mainMenu h3{
+	margin:0;
+	height:31px;
+	line-height:30px;
+	font-size:12px;
+	color:#FFF;
+	padding-left:10px;
+}
+#mainMenu ul{
+	margin:0;
+	padding:0;
+}
+#mainMenu li{
+	list-style:none;
+	border-bottom:1px solid #262a2d;
+}
+#mainMenu a:link,
+#mainMenu a:visited{
+	color:#FFF;
+	display:block;
+	height:40px;
+	line-height:40px;
+	padding-left:20px;
+	
+transition: background 0.3s;
+-webkit-transition: background 0.3s;
+-moz-transition: background 0.3s;
+-o-transition: background 0.3s;
+}
+#mainMenu a:hover,
+#mainMenu a:active,
+#mainMenu .active{
+	background:#2a84ae;
+}
+.breadcrumb{
+	background:#DDDDDD;
+	height:30px;
+	line-height:30px;
+	margin:0 10px;
+}
+.breadcrumb ul{
+	margin:0;
+	padding:0;
+	float:left;
+}
+.breadcrumb ul li{
+	float:left;
+	list-style:none;
+}
+.breadcrumb ul li a:link,
+.breadcrumb ul li a:visited{
+	color:#5D6F8D;
+	background:url(../images/breadcrumb.png) 100% 50% no-repeat;
+	padding-right:20px;
+	margin-right:10px;
+}
+.breadcrumb a.buttonLink{
+	float:right;
+	margin:2px 5px;
+}
+#mainpage .pageHeader{
+	width:100%;
+	margin:20px 0;
+}
+#mainpage .pageHeader h3{
+	font-size:18px;
+	color:#2a84ae;
+	font-family:'OpenSansSemibold', sans-serif;
+	margin:0;
+}
+.required{
+	width:18px;
+	height:18px;
+	margin-left:5px;
+	background:url(../../images/required.gif);
+	display:inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

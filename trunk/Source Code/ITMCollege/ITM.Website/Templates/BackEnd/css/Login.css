@@ -1,0 +1,35 @@
+body{
+	background:#43494c;
+}
+#loginForm{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-125px;
+	margin-left:-210px;
+	width:380px;
+	height:210px;
+	padding:20px;
+	background:#f4f5f6;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+#loginForm header{
+	border-bottom:1px solid #FFF;
+}
+.loginForm{
+	margin-top:20px;
+}
+.loginForm .formLabel{
+	float:left;
+	height:30px;
+	margin-bottom:10px;
+	width:120px;
+}
+input[type='text'],
+input[type='password']{
+	margin-bottom:10px;
+	float:left;
+	width:240px;
+}

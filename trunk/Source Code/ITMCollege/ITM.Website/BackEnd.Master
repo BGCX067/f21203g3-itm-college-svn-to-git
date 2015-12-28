@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BackEnd.master.cs" Inherits="ITM.Website.BackEnd" %>
+<!doctype html>
+<html>
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <title>ITM College Manage</title>
+    <link href="Templates/global/css/960_12_col.css" rel="stylesheet" type="text/css">
+    <link href="Templates/global/css/bootstraps.css" rel="stylesheet" type="text/css">
+    <link href="Templates/BackEnd/css/styles.css" rel="stylesheet" type="text/css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+    <section id="header">
+        <div class="container_12">
+            <div class="grid_12"><img src="../Templates/global/images/ITM-logo.png" alt=""></div>
+        </div>
+    </section>
+    <section id="mainpage">
+        <div class="container_12">
+            <div class="grid_3" id="mainMenu">
+                <h3>NAVIGATOR</h3>
+                <asp:Panel ID="AdminMenu" Visible="False" runat="server">
+                <ul>
+                    <li><asp:HyperLink ID="adminDashboard" runat="server" NavigateUrl="~/Manage/Administrator.aspx">Dashboard</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="adminDepartments" runat="server" NavigateUrl="~/Manage/Departments.aspx">Departments</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="adminFacilities" runat="server" NavigateUrl="~/Manage/Facilities.aspx">Facilities</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="adminFaculty" runat="server" NavigateUrl="~/Manage/Faculty.aspx">Faculty</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="adminAdmission" runat="server" NavigateUrl="~/Manage/Admission.aspx">Online Admission</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="adminAccounts" runat="server" NavigateUrl="~/Manage/Accounts.aspx">Accounts Manage</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="adminBranches" runat="server" NavigateUrl="~/Manage/Branches.aspx">Branches Manage</asp:HyperLink></li>
+                </ul>
+                </asp:Panel>
+                <asp:Panel ID="StaffMenu" Visible="False" runat="server">
+                <ul>
+                    <li><asp:HyperLink ID="staffDashboard" runat="server" NavigateUrl="~/Manage/Staff.aspx">Dashboard</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="staffCourse" runat="server" NavigateUrl="~/Manage/Courses.aspx">Courses</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="staffContents" runat="server" NavigateUrl="~/Manage/Contents.aspx">News & Events</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="staffAssignments" runat="server" NavigateUrl="~/Manage/Assignments.aspx">Assignments</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="staffFeedBack" runat="server" NavigateUrl="~/Manage/FeedBacks.aspx">FeedBacks</asp:HyperLink></li>
+                </ul>
+                </asp:Panel>
+            </div>
+            <div class="breadcrumb">
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="adminDashboardBread" runat="server" NavigateUrl="~/Manage/Administrator.aspx">Dashboard</asp:HyperLink>
+                        <asp:HyperLink ID="staffDashboardBread" runat="server" NavigateUrl="~/Manage/Staff.aspx">Dashboard</asp:HyperLink>
+                    </li>
+                    <asp:ContentPlaceHolder ID="CPHBreadCrumb" runat="server">
+                    
+                    </asp:ContentPlaceHolder>
+                </ul>
+                <asp:HyperLink ID="linkLogout" CssClass="buttonLink" runat="server" NavigateUrl="~/Manage/Logout.aspx">Logout</asp:HyperLink>
+                <asp:HyperLink ID="linkChangePassword" CssClass="buttonLink" runat="server" NavigateUrl="~/Manage/ChangePassword.aspx">Change Password</asp:HyperLink>
+            </div>
+            <div class="grid_9" align="left">
+                <asp:ContentPlaceHolder ID="MainFunctionPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container_12">
+            <div class="grid_12">
+                <div id="copyRight">© 2013 ITM College. All Rights Reserved</div>
+            </div>
+        </div>
+    </section>
+</form>
+</body>
+</html>

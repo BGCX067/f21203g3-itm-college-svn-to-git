@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB05A8EB-FB60-477A-B168-BFEB5DC78C31}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITM.Website</RootNamespace>
+    <AssemblyName>ITM.Website</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="Admission.aspx" />
+    <Content Include="AdmissionComplete.aspx" />
+    <Content Include="AdmissionStatus.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Contents.aspx" />
+    <Content Include="ContentsDetail.aspx" />
+    <Content Include="Courses.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DepartmentDetail.aspx" />
+    <Content Include="Departments.aspx" />
+    <Content Include="Facilities.aspx" />
+    <Content Include="FacilitiesDetail.aspx" />
+    <Content Include="Faculty.aspx" />
+    <Content Include="FacultyDetail.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Manage\Accounts.aspx" />
+    <Content Include="Manage\AccountsDelete.aspx" />
+    <Content Include="Manage\AccountsInsert.aspx" />
+    <Content Include="Manage\AccountsUpdate.aspx" />
+    <Content Include="Manage\Administrator.aspx" />
+    <Content Include="Manage\Admission.aspx" />
+    <Content Include="Manage\AdmissionDelete.aspx" />
+    <Content Include="Manage\AdmissionUpdate.aspx" />
+    <Content Include="Manage\AssignmentDelete.aspx" />
+    <Content Include="Manage\AssignmentInsert.aspx" />
+    <Content Include="Manage\Assignments.aspx" />
+    <Content Include="Manage\AssignmentUpdate.aspx" />
+    <Content Include="Manage\BranchDelete.aspx" />
+    <Content Include="Manage\Branches.aspx" />
+    <Content Include="Manage\BranchInsert.aspx" />
+    <Content Include="Manage\BranchUpdate.aspx" />
+    <Content Include="Manage\ChangePassword.aspx" />
+    <Content Include="Manage\ContentDelete.aspx" />
+    <Content Include="Manage\ContentInsert.aspx" />
+    <Content Include="Manage\Contents.aspx" />
+    <Content Include="Manage\ContentUpdate.aspx" />
+    <Content Include="Manage\Courses.aspx" />
+    <Content Include="Manage\CoursesDelete.aspx" />
+    <Content Include="Manage\CoursesInsert.aspx" />
+    <Content Include="Manage\CoursesUpdate.aspx" />
+    <Content Include="Manage\Default.aspx" />
+    <Content Include="Manage\DepartmentDelete.aspx" />
+    <Content Include="Manage\Departments.aspx" />
+    <Content Include="Manage\DepartmentUpdate.aspx" />
+    <Content Include="Manage\Facilities.aspx" />
+    <Content Include="Manage\FacilitiesDelete.aspx" />
+    <Content Include="Manage\FacilitiesInsert.aspx" />
+    <Content Include="Manage\FacilitiesUpdate.aspx" />
+    <Content Include="Manage\Faculty.aspx" />
+    <Content Include="Manage\FacultyDelete.aspx" />
+    <Content Include="Manage\FacultyInsert.aspx" />
+    <Content Include="Manage\FacultyUpdate.aspx" />
+    <Content Include="Manage\FeedbackDelete.aspx" />
+    <Content Include="Manage\FeedBacks.aspx" />
+    <Content Include="Manage\Login.aspx" />
+    <Content Include="Manage\Logout.aspx" />
+    <Content Include="Manage\Staff.aspx" />
+    <Content Include="Manage\DepartementsInsert.aspx" />
+    <Content Include="ProceedSubmission.aspx" />
+    <Content Include="RegisterCourse.aspx" />
+    <Content Include="RegistrationCompleted.aspx" />
+    <Content Include="Student.aspx" />
+    <Content Include="Templates\BackEnd\css\styles.css" />
+    <Content Include="Templates\BackEnd\images\breadcrumb.png" />
+    <Content Include="Templates\FrontEnd\css\styles.css" />
+    <Content Include="Templates\FrontEnd\images\departments.png" />
+    <Content Include="Templates\FrontEnd\images\imageShadow.png" />
+    <Content Include="Templates\FrontEnd\images\linkImg.png" />
+    <Content Include="Templates\FrontEnd\images\mainImage.png" />
+    <Content Include="Templates\FrontEnd\images\onlineAdmission.png" />
+    <Content Include="Templates\FrontEnd\images\recentPost.png" />
+    <Content Include="Templates\FrontEnd\images\subImage.png" />
+    <Content Include="Templates\global\css\960_12_col.css" />
+    <Content Include="Templates\global\css\bootstraps.css" />
+    <Content Include="Templates\global\css\fonts\OpenSans-Regular-webfont.svg" />
+    <Content Include="Templates\global\css\fonts\OpenSans-Semibold-webfont.svg" />
+    <Content Include="Templates\global\css\fonts\PTS55F-webfont.svg" />
+    <Content Include="Templates\global\images\ITM-logo.png" />
+    <Content Include="Templates\global\scripts\html5.js" />
+    <Content Include="Templates\global\scripts\jquery-1.9.1.min.js" />
+    <Content Include="Templates\global\scripts\jquery.tinymce.min.js" />
+    <Content Include="Templates\global\scripts\license.txt" />
+    <Content Include="Templates\global\scripts\tinymce\jquery.tinymce.min.js" />
+    <Content Include="Templates\global\scripts\tinymce\license.txt" />
+    <Content Include="Templates\global\scripts\tinymce\tinymce.min.js" />
+    <Content Include="Templates\images\ITM-logo.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admission.aspx.cs">
+      <DependentUpon>Admission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admission.aspx.designer.cs">
+      <DependentUpon>Admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdmissionComplete.aspx.cs">
+      <DependentUpon>AdmissionComplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdmissionComplete.aspx.designer.cs">
+      <DependentUpon>AdmissionComplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdmissionStatus.aspx.cs">
+      <DependentUpon>AdmissionStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdmissionStatus.aspx.designer.cs">
+      <DependentUpon>AdmissionStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd.Master.cs">
+      <DependentUpon>BackEnd.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd.Master.designer.cs">
+      <DependentUpon>BackEnd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contents.aspx.cs">
+      <DependentUpon>Contents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contents.aspx.designer.cs">
+      <DependentUpon>Contents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentsDetail.aspx.cs">
+      <DependentUpon>ContentsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentsDetail.aspx.designer.cs">
+      <DependentUpon>ContentsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentDetail.aspx.cs">
+      <DependentUpon>DepartmentDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DepartmentDetail.aspx.designer.cs">
+      <DependentUpon>DepartmentDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Departments.aspx.cs">
+      <DependentUpon>Departments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Departments.aspx.designer.cs">
+      <DependentUpon>Departments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities.aspx.cs">
+      <DependentUpon>Facilities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities.aspx.designer.cs">
+      <DependentUpon>Facilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FacilitiesDetail.aspx.cs">
+      <DependentUpon>FacilitiesDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacilitiesDetail.aspx.designer.cs">
+      <DependentUpon>FacilitiesDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty.aspx.cs">
+      <DependentUpon>Faculty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculty.aspx.designer.cs">
+      <DependentUpon>Faculty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyDetail.aspx.cs">
+      <DependentUpon>FacultyDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacultyDetail.aspx.designer.cs">
+      <DependentUpon>FacultyDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd.Master.cs">
+      <DependentUpon>FrontEnd.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd.Master.designer.cs">
+      <DependentUpon>FrontEnd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Accounts.aspx.cs">
+      <DependentUpon>Accounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Accounts.aspx.designer.cs">
+      <DependentUpon>Accounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\AccountsDelete.aspx.cs">
+      <DependentUpon>AccountsDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\AccountsDelete.aspx.designer.cs">
+      <DependentUpon>AccountsDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\AccountsInsert.aspx.cs">
+      <DependentUpon>AccountsInsert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\AccountsInsert.aspx.designer.cs">
+      <DependentUpon>AccountsInsert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\AccountsUpdate.aspx.cs">
+      <DependentUpon>AccountsUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\AccountsUpdate.aspx.designer.cs">
+      <DependentUpon>AccountsUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Administrator.aspx.cs">
+      <DependentUpon>Administrator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Administrator.aspx.designer.cs">
+      <DependentUpon>Administrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Admission.aspx.cs">
+      <DependentUpon>Admission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Admission.aspx.designer.cs">
+      <DependentUpon>Admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\AdmissionDelete.aspx.cs">
+      <DependentUpon>AdmissionDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\AdmissionDelete.aspx.designer.cs">
+      <DependentUpon>AdmissionDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\AdmissionUpdate.aspx.cs">
+      <DependentUpon>AdmissionUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\AdmissionUpdate.aspx.designer.cs">
+      <DependentUpon>AdmissionUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\AssignmentDelete.aspx.cs">
+      <DependentUpon>AssignmentDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\AssignmentDelete.aspx.designer.cs">
+      <DependentUpon>AssignmentDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\AssignmentInsert.aspx.cs">
+      <DependentUpon>AssignmentInsert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\AssignmentInsert.aspx.designer.cs">
+      <DependentUpon>AssignmentInsert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Assignments.aspx.cs">
+      <DependentUpon>Assignments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Assignments.aspx.designer.cs">
+      <DependentUpon>Assignments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\AssignmentUpdate.aspx.cs">
+      <DependentUpon>AssignmentUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\AssignmentUpdate.aspx.designer.cs">
+      <DependentUpon>AssignmentUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\BranchDelete.aspx.cs">
+      <DependentUpon>BranchDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\BranchDelete.aspx.designer.cs">
+      <DependentUpon>BranchDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Branches.aspx.cs">
+      <DependentUpon>Branches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Branches.aspx.designer.cs">
+      <DependentUpon>Branches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\BranchInsert.aspx.cs">
+      <DependentUpon>BranchInsert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\BranchInsert.aspx.designer.cs">
+      <DependentUpon>BranchInsert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\BranchUpdate.aspx.cs">
+      <DependentUpon>BranchUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\BranchUpdate.aspx.designer.cs">
+      <DependentUpon>BranchUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ContentDelete.aspx.cs">
+      <DependentUpon>ContentDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\ContentDelete.aspx.designer.cs">
+      <DependentUpon>ContentDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ContentInsert.aspx.cs">
+      <DependentUpon>ContentInsert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\ContentInsert.aspx.designer.cs">
+      <DependentUpon>ContentInsert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Contents.aspx.cs">
+      <DependentUpon>Contents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Contents.aspx.designer.cs">
+      <DependentUpon>Contents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\ContentUpdate.aspx.cs">
+      <DependentUpon>ContentUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\ContentUpdate.aspx.designer.cs">
+      <DependentUpon>ContentUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\CoursesDelete.aspx.cs">
+      <DependentUpon>CoursesDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\CoursesDelete.aspx.designer.cs">
+      <DependentUpon>CoursesDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\CoursesInsert.aspx.cs">
+      <DependentUpon>CoursesInsert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\CoursesInsert.aspx.designer.cs">
+      <DependentUpon>CoursesInsert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\CoursesUpdate.aspx.cs">
+      <DependentUpon>CoursesUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\CoursesUpdate.aspx.designer.cs">
+      <DependentUpon>CoursesUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\DepartmentDelete.aspx.cs">
+      <DependentUpon>DepartmentDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\DepartmentDelete.aspx.designer.cs">
+      <DependentUpon>DepartmentDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Departments.aspx.cs">
+      <DependentUpon>Departments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Departments.aspx.designer.cs">
+      <DependentUpon>Departments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\DepartmentUpdate.aspx.cs">
+      <DependentUpon>DepartmentUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\DepartmentUpdate.aspx.designer.cs">
+      <DependentUpon>DepartmentUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Facilities.aspx.cs">
+      <DependentUpon>Facilities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Facilities.aspx.designer.cs">
+      <DependentUpon>Facilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\FacilitiesDelete.aspx.cs">
+      <DependentUpon>FacilitiesDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\FacilitiesDelete.aspx.designer.cs">
+      <DependentUpon>FacilitiesDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\FacilitiesInsert.aspx.cs">
+      <DependentUpon>FacilitiesInsert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\FacilitiesInsert.aspx.designer.cs">
+      <DependentUpon>FacilitiesInsert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\FacilitiesUpdate.aspx.cs">
+      <DependentUpon>FacilitiesUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\FacilitiesUpdate.aspx.designer.cs">
+      <DependentUpon>FacilitiesUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Faculty.aspx.cs">
+      <DependentUpon>Faculty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Faculty.aspx.designer.cs">
+      <DependentUpon>Faculty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\FacultyDelete.aspx.cs">
+      <DependentUpon>FacultyDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\FacultyDelete.aspx.designer.cs">
+      <DependentUpon>FacultyDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\FacultyInsert.aspx.cs">
+      <DependentUpon>FacultyInsert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\FacultyInsert.aspx.designer.cs">
+      <DependentUpon>FacultyInsert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\FacultyUpdate.aspx.cs">
+      <DependentUpon>FacultyUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\FacultyUpdate.aspx.designer.cs">
+      <DependentUpon>FacultyUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\FeedbackDelete.aspx.cs">
+      <DependentUpon>FeedbackDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\FeedbackDelete.aspx.designer.cs">
+      <DependentUpon>FeedbackDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\FeedBacks.aspx.cs">
+      <DependentUpon>FeedBacks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\FeedBacks.aspx.designer.cs">
+      <DependentUpon>FeedBacks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Staff.aspx.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Staff.aspx.designer.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\DepartementsInsert.aspx.cs">
+      <DependentUpon>DepartementsInsert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\DepartementsInsert.aspx.designer.cs">
+      <DependentUpon>DepartementsInsert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProceedSubmission.aspx.cs">
+      <DependentUpon>ProceedSubmission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProceedSubmission.aspx.designer.cs">
+      <DependentUpon>ProceedSubmission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterCourse.aspx.cs">
+      <DependentUpon>RegisterCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterCourse.aspx.designer.cs">
+      <DependentUpon>RegisterCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationCompleted.aspx.cs">
+      <DependentUpon>RegistrationCompleted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrationCompleted.aspx.designer.cs">
+      <DependentUpon>RegistrationCompleted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student.aspx.cs">
+      <DependentUpon>Student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student.aspx.designer.cs">
+      <DependentUpon>Student.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Images\Departments\" />
+    <Folder Include="Images\Facilities\" />
+    <Folder Include="Images\Faculty\" />
+    <Folder Include="Images\News\" />
+    <Folder Include="Templates\FrontEnd\scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FrontEnd.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BackEnd.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ITM.Services\ITM.Services.csproj">
+      <Project>{4F2BB7A9-BCC1-4AD4-89BD-0E868DAD3BC8}</Project>
+      <Name>ITM.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\global\css\fonts\OpenSans-Regular-webfont.eot" />
+    <None Include="Templates\global\css\fonts\OpenSans-Regular-webfont.ttf" />
+    <None Include="Templates\global\css\fonts\OpenSans-Regular-webfont.woff" />
+    <None Include="Templates\global\css\fonts\OpenSans-Semibold-webfont.eot" />
+    <None Include="Templates\global\css\fonts\OpenSans-Semibold-webfont.ttf" />
+    <None Include="Templates\global\css\fonts\OpenSans-Semibold-webfont.woff" />
+    <None Include="Templates\global\css\fonts\PTS55F-webfont.eot" />
+    <None Include="Templates\global\css\fonts\PTS55F-webfont.ttf" />
+    <None Include="Templates\global\css\fonts\PTS55F-webfont.woff" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2773</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

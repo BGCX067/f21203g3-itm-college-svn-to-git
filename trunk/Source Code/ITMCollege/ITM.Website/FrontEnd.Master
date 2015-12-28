@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FrontEnd.master.cs" Inherits="ITM.Website.FrontEnd" %>
+<!doctype html>
+<html>
+<head id="Head1" runat="server">
+    <title>ITM College</title>
+    <link href="Templates/global/css/960_12_col.css" rel="stylesheet" type="text/css">
+    <link href="Templates/global/css/bootstraps.css" rel="stylesheet" type="text/css">
+    <link href="Templates/FrontEnd/css/styles.css" rel="stylesheet" type="text/css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+    <section id="topbar">
+        <div class="container_12">
+            <div class="grid_12">
+            <asp:Panel runat="server" ID="StudentPanel" CssClass="grid_6" Visible="False">
+                <span class="float-left">You are logged in as: </span>
+                <asp:HyperLink ID="studentControlPanel" NavigateUrl="Student.aspx" runat="server" CssClass="float-left buttonLink">STUDENT</asp:HyperLink>
+                <asp:HyperLink ID="studentLogout" NavigateUrl="Logout.aspx" runat="server" CssClass="float-left buttonLink">Logout</asp:HyperLink>
+            </asp:Panel>
+                <asp:HyperLink ID="linkAchievements" runat="server" CssClass="buttonLink" NavigateUrl="Contents.aspx?view=achievements">Achievements</asp:HyperLink>
+                <asp:HyperLink ID="linkMerit" runat="server" CssClass="buttonLink" NavigateUrl="Contents.aspx?view=merit">Merit List</asp:HyperLink>
+            </div>
+        </div>
+    </section>
+    <section id="header">
+        <div class="headerLeft"></div>
+        <div class="headerRight"></div>
+        <div class="container_12">
+            <div class="headerContainer grid_12">
+                <asp:HyperLink ID="SiteLink" CssClass="branding" runat="server" NavigateUrl="~/Default.aspx"><img src="Templates/global/images/ITM-logo.png" alt="" /></asp:HyperLink>
+                <ul id="sitemenu">
+                    <li><asp:HyperLink ID="linkHome" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="linkDepartment" runat="server" NavigateUrl="~/Departments.aspx">Departments</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="linkFacilities" runat="server" NavigateUrl="~/Facilities.aspx">Facilities</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="linkFaculty" runat="server" NavigateUrl="~/Faculty.aspx">Faculty</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="linkCourses" runat="server" NavigateUrl="~/Courses.aspx">Courses</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="linkContact" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="regAdmission">
+        <div class="container_12">
+            <div class="grid_12">
+                <asp:HyperLink ID="linkCheckAdmission" runat="server" CssClass="buttonLink" 
+                    NavigateUrl="~/AdmissionStatus.aspx">Check Admission Status</asp:HyperLink>
+                <div class="addmissionText">Admission Open for 2013</div>
+                <asp:HyperLink ID="linkRegAdmission" runat="server" CssClass="admissionImage" 
+                    NavigateUrl="~/Admission.aspx"><img src="Templates/FrontEnd/images/onlineAdmission.png" alt="" /></asp:HyperLink>
+            </div>
+        </div>
+    </section>
+    <section id="imageBlock">
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="imageContainer">
+                    <asp:ContentPlaceHolder ID="ImagePlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="content">
+        <div class="container_12">
+            <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>    
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container_12">
+            <div class="grid_4">
+                <div id="copyRight">© 2013 ITM College. All Rights Reserved</div>
+            </div>
+                <div class="grid_8" id="quick-links">
+                    <ul>
+                        <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Departments.aspx">Departments</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Facilities.aspx">Facilities</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Faculty.aspx">Faculty</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Courses.aspx">Courses</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink></li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+</form>
+</body>
+</html>
